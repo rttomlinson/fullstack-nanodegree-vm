@@ -32,26 +32,22 @@ def testCode():
     addPlayertoTournament(1, pcid)
     addPlayertoTournament(1, plid)
     addPlayertoTournament(1, renzoid)
-    """
-    #addPlayertoTournament(2, 1)
-    #addPlayertoTournament(2, 2)
-    #addPlayertoTournament(2, 3)
-    #addPlayertoTournament(2, 4)
-    #addPlayertoTournament(2, 5)
-    #addPlayertoTournament(2, 6)
-    #addPlayertoTournament(2, 7)
-    #addPlayertoTournament(2, 8)
-    """
+    addPlayertoTournament(2, tsid)
+    addPlayertoTournament(2, fsid)
+    addPlayertoTournament(2, ajid)
+    addPlayertoTournament(2, ppid)
+    addPlayertoTournament(2, rtid)
+    addPlayertoTournament(2, rdid)
+    addPlayertoTournament(2, pcid)
+    addPlayertoTournament(2, plid)
     reportMatch(1, ajid, rtid)
     reportMatch(1, fsid, rdid)
     reportMatch(1, tsid, plid)
     reportMatch(1, pcid, ppid)
-    """
-    #reportMatch(2, 1, 3)
-    #reportMatch(2, 5, 2)
-    #reportMatch(2, 8, 7)
-    #reportMatch(2, 6, 4)
-    """
+    reportMatch(2, tsid, ajid)
+    reportMatch(2, rtid, fsid)
+    reportMatch(2, plid, pcid)
+    reportMatch(2, rdid, ppid)
     pairings = swissPairings(1)
     # Get the pairings and randomly assign the winner of one of them. Or I could just default to the first person in the pairing
     for i in range(0, 4):

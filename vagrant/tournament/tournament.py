@@ -130,7 +130,7 @@ def playerStandings(tid):
     """
     db = connect()
     c = db.cursor()
-    c.execute("""SELECT * FROM v_playerstandingswithopponentwins WHERE tournamentid = (%s);""", (tid,))
+    c.execute("""SELECT * FROM v_playerstandings WHERE tournamentid = (%s);""", (tid,))
     standings = c.fetchall()
     db.close()
     return standings
